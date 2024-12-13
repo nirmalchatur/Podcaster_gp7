@@ -123,15 +123,16 @@
     "xtend": "^4.0.2"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
     "nodemon": "^3.1.9",
     "vite": "^6.0.3"
   },
   "scripts": {
-  "dev": "nodemon app.js",
-  "start": "node app.js",
-  "build": "npm install && npm run build --prefix frontend",
-  "rev": "npm version patch"
-},
+    "dev": "nodemon app.js",
+    "start": "node app.js",
+    "build": "npm install && npm run build --prefix frontend",
+    "rev": "npm version patch"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
