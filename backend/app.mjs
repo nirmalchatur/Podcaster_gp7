@@ -1,16 +1,15 @@
-const express = require("express");
-const cookieParser = require("cookie-parser");
-const userApi = require("./routes/user");
-const CatApi = require("./routes/categories");
-const PodcastApi = require("./routes/podcast");
-const cors = require("cors");
-
-const path = require("path");
-
+import express from "express";
+import cookieParser from "cookie-parser";
+import userApi from "./routes/user.js";
+import CatApi from "./routes/categories.js";
+import PodcastApi from "./routes/podcast.js";
+import cors from "cors";
+import path from "path";
+import dotenv from "dotenv";
+import "./conn/conn.js";
+dotenv.config();
 require("dotenv").config(); // Load environment variables
 require("./conn/conn"); // Database connection
-
-const app = express(); // Define the app instance
 
 // CORS Configuration
 app.use(
